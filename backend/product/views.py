@@ -1,5 +1,7 @@
-from django.shortcuts import render
+from rest_framework.views import APIView
+
+from .models import Product
 
 # Create your views here.
-def getData(request):
+class ProductView(APIView):
     pass
