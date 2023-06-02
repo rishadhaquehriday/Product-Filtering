@@ -3,5 +3,6 @@ from .views import ProductView
 
 
 urlpatterns = [
-    path('product/',ProductView.as_view())
+    path('products/',ProductView.as_view()),
+    path('products/<str:cateGory>',ProductView.as_view())
 ]
